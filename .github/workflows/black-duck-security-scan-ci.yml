@@ -5,6 +5,8 @@
 name: CI Black Duck security scan
 
 on:
+  workflow_dispatch:
+  
   push:
     branches: [ main, master, develop, stage, release ]
   pull_request:
