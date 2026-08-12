@@ -16,4 +16,10 @@ public class HardcodedCredentials {
         SecretKeySpec keyspec = new SecretKeySpec(secret.getBytes("UTF-8"), "MD5");
         return(keyspec);
     }
+
+    public static SecretKeySpec getKeySpec1() throws UnsupportedEncodingException {
+        String secret = "It's a secret to everybody 1.";
+        SecretKeySpec keyspec = new SecretKeySpec(secret.getBytes("UTF-8"), "MD5");
+        return(keyspec);
+    }
 }
